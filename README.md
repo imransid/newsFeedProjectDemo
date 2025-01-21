@@ -28,3 +28,5 @@ demo-react-native/
 └── README.md                  # Project documentation
 
 ```
+
+### open -a "Android Studio"

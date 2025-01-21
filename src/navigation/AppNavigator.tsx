@@ -4,8 +4,8 @@ import { View, Text } from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
 import { NavigationContainer } from '@react-navigation/native';
 // Import your screens
-import HomeScreen from '../screens/ChatScreen';
-import ActivitiesScreen from "../screens/GameScreen";
+import GameScreen from '../screens/GameScreen';
+// import ActivitiesScreen from "../screens/GameScreen";
 
 
 
@@ -59,25 +59,25 @@ const AppNavigator = () => {
       })}
     >
       <Tab.Screen
-        name="Bookings"
-        component={HomeScreen}
+        name="GameScreen"
+        component={GameScreen}
+        options={{ headerShown: false }}
+      />
+      {/* <Tab.Screen
+        name="GameScreen"
+        component={GameScreen}
         options={{ headerShown: false }}
       />
       <Tab.Screen
-        name="Activities"
-        component={ActivitiesScreen}
+        name="GameScreen"
+        component={GameScreen}
         options={{ headerShown: false }}
       />
       <Tab.Screen
-        name="Notifications"
-        component={NotificationsScreen}
+        name="GameScreen"
+        component={GameScreen}
         options={{ headerShown: false }}
-      />
-      <Tab.Screen
-        name="Menu"
-        component={MenuScreen}
-        options={{ headerShown: false }}
-      />
+      /> */}
     </Tab.Navigator>
   );
 };
