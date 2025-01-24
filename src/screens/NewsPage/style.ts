@@ -3,118 +3,113 @@ import {scale, ScaledSheet} from 'react-native-size-matters';
 const styles = ScaledSheet.create({
   container: {
     flex: 1,
-    paddingHorizontal: 16,
+    padding: 20,
     backgroundColor: '#fff',
   },
-  header: {
-    marginTop: 16,
-  },
-  greeting: {
-    fontSize: 18,
-    color: '#555',
-  },
-  title: {
-    fontSize: 24,
-    fontWeight: 'bold',
-    color: '#000',
-  },
-  searchContainer: {
+  matchHeader: {
+    width: '100%',
     flexDirection: 'row',
+    justifyContent: 'space-between',
+    paddingBottom: 10,
+    borderBottomColor: '#EEEEEE',
+    borderBottomWidth: 1,
+    paddingHorizontal: 5,
+    paddingLeft: 15,
+    paddingTop: 10,
+  },
+  smallContainer: {
+    borderRadius: 25,
+    borderWidth: 1,
+    borderColor: '#EEEEEE',
+    marginBottom: 10,
+  },
+  headerText: {
+    fontSize: 16,
+    color: '#210C0C',
+    fontFamily: 'Rubik',
+    fontStyle: 'normal',
+    fontWeight: '600',
+  },
+  subHeaderText: {
+    fontSize: 14,
+    color: '#B0AAAA',
+    fontFamily: 'Rubik',
+    fontStyle: 'normal',
+    fontWeight: '400',
+  },
+  matchContainer: {
+    flexDirection: 'row',
+    flexWrap: 'wrap', // Ensures content wraps within the container
+    justifyContent: 'space-between',
     alignItems: 'center',
-    marginVertical: 16,
-  },
-  searchBar: {
-    flex: 1,
-    borderRadius: 10,
-    marginRight: 8,
-  },
-  dateItemContainer: {
-    alignItems: 'center',
-    justifyContent: 'center',
-    paddingHorizontal: 10,
-    paddingVertical: 5,
-    height: '55@s',
-    width: '55@s',
-  },
-  dateItemSelectedContainer: {
-    borderWidth: 2,
-    borderRadius: '50@s',
-    borderColor: '#C1E100', // Matches the green highlight in the screenshot
     padding: 10,
   },
-  dateNumber: {
-    fontSize: 16,
-    fontWeight: 'bold',
-    color: '#555', // Default gray
+  team: {
+    alignItems: 'center',
+    flex: 1, // Allows flexible width for responsiveness
+    maxWidth: '20%', // Ensures each team occupies a maximum percentage of the container
+    marginHorizontal: 5,
   },
-  dateNumberSelected: {
-    color: '#C1E100', // Matches the green text for the selected date
-  },
-  dateDay: {
+  name: {
     fontSize: 12,
-    color: '#555', // Default gray
+    fontWeight: '700',
+    textAlign: 'center',
+    fontFamily: 'Rubik',
+    color: '#210C0C',
   },
-  dateDaySelected: {
-    color: '#C1E100', // Matches the green text for the selected day
+  tag: {
+    fontSize: 12,
+    color: '#B0AAAA',
+    fontFamily: 'Poppins',
+    fontStyle: 'normal',
+    fontWeight: '400',
+    textAlign: 'center',
   },
-  card: {
-    marginVertical: 16,
-    borderRadius: 10,
+  scores: {
+    alignItems: 'center',
+    flex: 1.5, // Slightly larger flex for the score section
+    maxWidth: '30%', // Allows scores section to take a larger portion of the container
+    marginHorizontal: 5,
   },
-  cardImage: {
-    height: 150,
-    borderTopLeftRadius: 10,
-    borderTopRightRadius: 10,
+  score: {
+    color: '#000',
+    fontFamily: 'Rubik',
+    fontSize: 16,
+    fontStyle: 'normal',
+    fontWeight: '500',
+    letterSpacing: 2.545,
   },
-  cardContent: {
-    padding: 8,
-  },
-  cardTitle: {
-    fontSize: 18,
-    fontWeight: 'bold',
-  },
-  cardSubtitle: {
+  setScore: {
     fontSize: 14,
     color: '#555',
+    textAlign: 'center',
   },
-  favoriteIcon: {
-    position: 'absolute',
-    bottom: 8,
-    right: 8,
-    backgroundColor: 'white',
-    borderRadius: 20,
-  },
-  timeItem: {
-    paddingVertical: 8,
-    paddingHorizontal: 16,
-    borderRadius: 20,
-    marginHorizontal: 4,
+  systemMessage: {
+    padding: 15,
     borderWidth: 1,
-    borderColor: '#ccc',
+    borderColor: '#ddd',
+    borderRadius: 10,
+    backgroundColor: '#f9f9f9',
   },
-  timeItemSelected: {
-    backgroundColor: '#d1f0d6',
-    borderColor: '#4CAF50',
+  systemText: {
+    fontSize: 14,
+    color: '#333',
+    marginBottom: 5,
   },
   timeText: {
-    color: '#555',
+    fontSize: 12,
+    color: '#777',
   },
-  timeTextSelected: {
-    color: '#4CAF50',
-    fontWeight: 'bold',
+  fakeCard: {
+    width: '100%',
+    height: 2,
+    backgroundColor: '#EEEEEE',
+    marginTop: 20,
+    marginBottom: 20,
   },
-  bottomNav: {
-    flexDirection: 'row',
-    justifyContent: 'space-around',
-    paddingVertical: 16,
-    borderTopWidth: 1,
-    borderColor: '#eee',
+  scrollContent: {
+    paddingHorizontal: 2, // Adjust the padding to your desired value
   },
-  // activitiesContainer: {
-  //   marginTop: 20, // Add your own styling here
-  //   flex: 1,
-  //   paddingHorizontal: 16,
-  // },
 });
 
 export default styles;

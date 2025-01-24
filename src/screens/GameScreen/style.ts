@@ -3,18 +3,30 @@ import {scale, ScaledSheet} from 'react-native-size-matters';
 const styles = ScaledSheet.create({
   container: {
     flex: 1,
-    padding: 16,
     backgroundColor: '#f5f5f5',
   },
   card: {
     marginVertical: 8,
     // padding: 16,
   },
+  headerRow: {
+    paddingVertical: 15,
+    paddingHorizontal: 15,
+  },
+  locationCol: {
+    width: '80%',
+    alignItems: 'flex-start',
+  },
+  shareCol: {
+    alignItems: 'flex-end',
+  },
   matchHeader: {
     height: 70,
     width: '100%',
-    // marginBottom: 8,
-    // var
+  },
+  extraPadding: {paddingHorizontal: 15, paddingVertical: 10},
+  infoRow: {
+    paddingLeft: 15,
   },
   location: {
     color: '#145E94',
@@ -58,7 +70,7 @@ const styles = ScaledSheet.create({
   },
   playerName: {
     paddingTop: 2,
-    fontWeight: '660', // Bold font
+    fontWeight: 'medium', // medium font
     marginTop: 8, // Margin at the top
     fontFamily: 'Rubik', // Custom font family (ensure Rubik is added to your project)
     fontSize: 14, // Font size in points
@@ -122,6 +134,29 @@ const styles = ScaledSheet.create({
     fontWeight: '400',
     lineHeight: 12.253, // Equivalent to 87.523% of fontSize
     textAlign: 'right',
+  },
+
+  fixedHeader: {
+    height: 60, // Adjust the height as needed
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#145E94', // Example background color
+    paddingTop: 20, // Push the content inside the header down
+    marginBottom: 10, // Adds space below the header
+  },
+  headerText: {
+    fontSize: 20,
+    fontWeight: 'bold',
+    color: '#333',
+  },
+
+  scrollContent: {
+    paddingHorizontal: 15, // Adjust the padding to your desired value
+  },
+
+  listContent: {
+    paddingTop: 20,
+    paddingBottom: 20, // Add padding to avoid overlap with footer or edges
   },
 });
 
